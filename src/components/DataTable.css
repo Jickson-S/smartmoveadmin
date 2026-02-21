@@ -1,0 +1,33 @@
+.table-wrap {
+  overflow-x: auto;
+}
+
+.table-wrap table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 760px;
+}
+
+.table-wrap th,
+.table-wrap td {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: middle;
+}
+
+.table-wrap th {
+  color: #d3d3d3;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.35px;
+}
+
+.table-wrap tbody tr:hover {
+  background: #1f1f1f;
+}
+
+.empty-cell {
+  text-align: center;
+  color: var(--muted);
+}

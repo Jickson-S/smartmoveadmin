@@ -1,0 +1,47 @@
+.manage-cars-page {
+  display: grid;
+  gap: 12px;
+}
+
+.manage-cars-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.manage-cars-head h2 {
+  margin: 0;
+  font-family: 'Syne', sans-serif;
+}
+
+.car-thumb {
+  width: 68px;
+  height: 48px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 1px solid var(--border);
+}
+
+.table-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.pagination-row {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+
+.pagination-row span {
+  color: #cfcfcf;
+}
+
+@media (max-width: 760px) {
+  .manage-cars-head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

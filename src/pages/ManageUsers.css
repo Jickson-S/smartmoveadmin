@@ -1,0 +1,33 @@
+.manage-users-page {
+  display: grid;
+  gap: 12px;
+}
+
+.manage-users-head {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 10px;
+}
+
+.manage-users-head h2 {
+  margin: 0;
+  font-family: 'Syne', sans-serif;
+}
+
+.user-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  background: #2a2a2a;
+  border: 1px solid var(--border);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+@media (max-width: 760px) {
+  .manage-users-head {
+    grid-template-columns: 1fr;
+  }
+}

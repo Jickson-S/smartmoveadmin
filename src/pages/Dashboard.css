@@ -1,0 +1,94 @@
+.dashboard-page {
+  display: grid;
+  gap: 14px;
+}
+
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.charts-grid {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr 1fr;
+  gap: 12px;
+}
+
+.chart-panel {
+  padding: 14px;
+  min-height: 320px;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.chart-panel h3 {
+  margin: 0 0 12px;
+  font-family: 'Syne', sans-serif;
+}
+
+.doughnut-panel {
+  position: relative;
+}
+
+.doughnut-wrap {
+  position: relative;
+  min-height: 240px;
+}
+
+.doughnut-center {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-family: 'Syne', sans-serif;
+  font-size: 24px;
+}
+
+.recent-bookings {
+  padding: 14px;
+}
+
+.recent-bookings h3 {
+  margin: 0 0 12px;
+  font-family: 'Syne', sans-serif;
+}
+
+.table-scroll {
+  overflow-x: auto;
+}
+
+.recent-bookings table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 680px;
+}
+
+.recent-bookings th,
+.recent-bookings td {
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+.recent-bookings tbody tr:hover {
+  background: #1f1f1f;
+}
+
+@media (max-width: 1260px) {
+  .charts-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1080px) {
+  .stats-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 680px) {
+  .stats-row {
+    grid-template-columns: 1fr;
+  }
+}

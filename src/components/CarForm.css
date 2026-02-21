@@ -1,0 +1,44 @@
+.car-form {
+  display: grid;
+  gap: 12px;
+}
+
+.car-form h4 {
+  margin: 0;
+  font-size: 18px;
+  font-family: 'Syne', sans-serif;
+}
+
+.car-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.car-form label {
+  display: grid;
+  gap: 6px;
+  font-size: 13px;
+  color: #d2d2d2;
+}
+
+.car-form textarea {
+  resize: vertical;
+}
+
+.image-preview-wrap {
+  width: 100%;
+  max-width: 260px;
+}
+
+.image-preview {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+}
+
+@media (max-width: 780px) {
+  .car-form-grid {
+    grid-template-columns: 1fr;
+  }
+}

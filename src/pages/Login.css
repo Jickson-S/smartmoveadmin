@@ -1,0 +1,27 @@
+.admin-login-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+}
+
+.admin-login-card {
+  width: min(420px, 100%);
+  padding: 20px;
+}
+
+.admin-login-card h1 {
+  margin: 0;
+  font-family: 'Syne', sans-serif;
+}
+
+.admin-login-card p {
+  margin: 8px 0 0;
+  color: var(--muted);
+}
+
+.admin-login-card form {
+  margin-top: 14px;
+  display: grid;
+  gap: 10px;
+}
